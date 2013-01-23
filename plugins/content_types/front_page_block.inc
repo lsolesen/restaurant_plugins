@@ -17,7 +17,7 @@ $plugin = array(
  */
 function restaurant_plugins_front_page_block_content_type_render($subtype, $conf, $args, $context) {
   $block = new stdClass();
-  $block->content = '<div class="row">
+  $block->content = '<div class="section-wrapper">
   <div class="span4">
     <div class="section">
       <div class="section-image">
