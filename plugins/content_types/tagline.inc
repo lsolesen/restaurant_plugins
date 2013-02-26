@@ -7,7 +7,6 @@ $plugin = array(
   'title' => t('Tagline'),
   'single' => TRUE,
   'category' => array(t('Restaurant')),
-  'render callback' => 'restaurant_plugins_tagline_content_type_render',
 );
 
 
