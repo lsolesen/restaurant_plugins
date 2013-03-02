@@ -44,6 +44,15 @@ function restaurant_plugins_map_content_type_form($form, &$form_state) {
     '#suffix' => '</div>',
   );
 
+  $form['show_address'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Show address'),
+    '#description' => t('Show the address under the map.'),
+    '#default_value' => !empty($conf['show_address']) ? $conf['show_address'] : 0,
+    '#prefix' => '<div class="clear-block no-float">',
+    '#suffix' => '</div>',
+  );
+
   return $form;
 }
 
@@ -69,11 +78,12 @@ function restaurant_plugins_map_content_type_render($subtype, $conf, $args, $con
   $block->title = isset($conf['title']) ? $conf['title'] : t('Map');
 
   $block->content = theme('simple_gmap_output', array(
-    'include_text' => FALSE,
+    'include_text' => (isset($conf['show_address'])) ? TRUE : FALSE,
     'information_bubble' => FALSE,
     'url_suffix' => $url_suffix,
     'width' => $width,
     'height' => $height,
+    'address_text' => (isset($conf['show_address'])) ? check_markup($address) : '',
   ));
 
   return $block;
