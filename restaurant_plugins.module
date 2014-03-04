@@ -11,3 +11,15 @@
 function restaurant_plugins_ctools_plugin_directory($module, $plugin) {
   return 'plugins/' . $plugin;
 }
+
+/**
+ * Implements hook_theme().
+ */
+function restaurant_plugins_theme() {
+  return array(
+    'contact_block' => array(
+      'variables' => array('address' => NULL, 'phone' => NULL),
+      'file' => 'restaurant_plugins.theme.inc',
+    ),
+  );
+}
