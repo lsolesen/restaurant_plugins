@@ -17,9 +17,9 @@ function restaurant_plugins_ctools_plugin_directory($module, $plugin) {
  */
 function restaurant_plugins_theme() {
   return array(
-    'contact_block' => array(
+    'contact_info_pane' => array(
       'variables' => array('address' => NULL, 'phone' => NULL),
-      'template' => 'templates/contact-block',
+      'template' => 'templates/contact-info-pane',
       'file' => 'restaurant_plugins.theme.inc',
     ),
     'logo_site_name' => array(

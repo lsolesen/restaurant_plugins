@@ -4,16 +4,16 @@
 * Plugin definition
 */
 $plugin = array(
-  'title' => t('Contact block'),
+  'title' => t('Contact info'),
   'single' => TRUE,
   'category' => array(t('Restaurant')),
-  'edit form' => 'restaurant_plugins_contact_block_content_type_form',
+  'edit form' => 'restaurant_plugins_contact_info_content_type_form',
 );
 
 /**
  * Settings Form
  */
-function restaurant_plugins_contact_block_content_type_form($form, &$form_state) {
+function restaurant_plugins_contact_info_content_type_form($form, &$form_state) {
   $conf = $form_state['conf'];
 
   $form['title'] = array(
@@ -27,7 +27,7 @@ function restaurant_plugins_contact_block_content_type_form($form, &$form_state)
   return $form;
 }
 
-function restaurant_plugins_contact_block_content_type_form_submit($form, &$form_state) {
+function restaurant_plugins_contact_info_content_type_form_submit($form, &$form_state) {
   foreach (element_children($form) as $key) {
     if (!empty($form_state['values'][$key])) {
       $form_state['conf'][$key] = $form_state['values'][$key];
@@ -38,13 +38,13 @@ function restaurant_plugins_contact_block_content_type_form_submit($form, &$form
 /**
  * Render Callback
  */
-function restaurant_plugins_contact_block_content_type_render($subtype, $conf, $args) {
+function restaurant_plugins_contact_info_content_type_render($subtype, $conf, $args) {
   $block = new stdClass();
 
   $block->title = isset($conf['title']) ? $conf['title'] : '';
 
   // Add address to content.
-  $block->content = theme('contact_block', array(
+  $block->content = theme('contact_info_pane', array(
     'address' => restaurant_base_get_settings('address'),
     'phone' => restaurant_base_get_settings('phone'),
   ));
