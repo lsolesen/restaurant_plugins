@@ -19,9 +19,12 @@ function restaurant_plugins_theme() {
   return array(
     'contact_block' => array(
       'variables' => array('address' => NULL, 'phone' => NULL),
+      'template' => 'templates/contact-block',
       'file' => 'restaurant_plugins.theme.inc',
     ),
     'logo_site_name' => array(
+      'variables' => array(),
+      'template' => 'templates/logo-site-name',
       'file' => 'restaurant_plugins.theme.inc',
     ),
   );
