@@ -7,7 +7,7 @@ $plugin = array(
   'title' => t('Contact block'),
   'single' => TRUE,
   'category' => array(t('Restaurant')),
-  'edit form' => 'restaurant_plugins_address_content_type_form',
+  'edit form' => 'restaurant_plugins_contact_block_content_type_form',
 );
 
 /**
