@@ -65,4 +65,26 @@
     </div> <!-- /#main -->
   </div> <!-- /#main-wrapper -->
 
+  <header id="footer" class="header" role="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 column-1">
+          <div class="panel-panel-inner">
+            <?php print $content['footer_col1']; ?>
+          </div>
+        </div>
+        <div class="col-md-4 column-2">
+          <div class="panel-panel-inner">
+            <?php print $content['footer_col2']; ?>
+          </div>
+        </div>
+        <div class="col-md-4 column-3">
+          <div class="panel-panel-inner">
+            <?php print $content['footer_col3']; ?>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header> <!-- /#header -->
+
 </div> <!-- /.site-layout -->

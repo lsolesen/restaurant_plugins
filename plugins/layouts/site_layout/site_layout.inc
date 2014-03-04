@@ -12,5 +12,8 @@ $plugin = array(
     'header_col3' => t('Header column 3'),
     'navigation' => t('Navigation'),
     'page_content' => t('Page content'),
+    'footer_col1' => t('Footer column 1'),
+    'footer_col2' => t('Footer column 2'),
+    'footer_col3' => t('Footer column 3'),
   ),
 );
