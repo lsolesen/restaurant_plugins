@@ -27,5 +27,10 @@ function restaurant_plugins_theme() {
       'template' => 'templates/logo-site-name-pane',
       'file' => 'restaurant_plugins.theme.inc',
     ),
+    'navigation' => array(
+      'variables' => array(),
+      'template' => 'templates/navigation',
+      'file' => 'restaurant_plugins.theme.inc',
+    ),
   );
 }

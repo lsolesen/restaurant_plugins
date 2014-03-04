@@ -11,7 +11,19 @@
 ?>
 
 <div class="site-layout clearfix <?php if (!empty($classes)) { print $classes; } ?><?php if (!empty($class)) { print $class; } ?>" <?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
-    
+  
+  <?php if ($content['top']): ?>
+    <div id="top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <?php print $content['top']; ?>
+          </div>
+        </div>
+      </div>
+    </div>
+  <?php endif; ?>
+
   <header id="header" class="header" role="header">
     <div class="container">
       <div class="row">
@@ -33,6 +45,19 @@
       </div>
     </div>
   </header> <!-- /#header -->
+
+  <?php if ($content['navigation']): ?>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <?php print $content['navigation']; ?>
+          </div>
+        </div>
+      </div>
+    </nav>
+  <?php endif; ?>
+
     
   <div id="main-wrapper">
     <div id="main" class="main">

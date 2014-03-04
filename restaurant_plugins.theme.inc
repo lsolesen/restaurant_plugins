@@ -28,3 +28,14 @@ function template_preprocess_logo_site_name_pane(&$variables) {
   // Add the logo to the template.
   $variables['logo'] = theme('image', array('path' => theme_get_setting('logo')));
 }
+
+/**
+ * template_preprocess_navigation().
+ *
+ * @ingroup themeable
+ */
+function template_preprocess_navigation(&$variables) {
+  // Format and add main menu to template.
+  $variables['main_menu'] = menu_tree(variable_get('menu_main_links_source', 'main-menu'));
+  $variables['main_menu']['#theme_wrappers'] = array('menu_tree__navbar_nav');
+}
