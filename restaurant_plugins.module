@@ -22,9 +22,9 @@ function restaurant_plugins_theme() {
       'template' => 'templates/contact-info-pane',
       'file' => 'restaurant_plugins.theme.inc',
     ),
-    'logo_site_name' => array(
+    'logo_site_name_pane' => array(
       'variables' => array(),
-      'template' => 'templates/logo-site-name',
+      'template' => 'templates/logo-site-name-pane',
       'file' => 'restaurant_plugins.theme.inc',
     ),
   );

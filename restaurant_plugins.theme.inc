@@ -5,20 +5,20 @@
  */
 
 /**
- * template_preprocess_contact_block().
+ * template_preprocess_contact_info_pane().
  *
  * @ingroup themeable
  */
-function template_preprocess_contact_block(&$variables) {
+function template_preprocess_contact_info_pane(&$variables) {
   //
 }
 
 /**
- * template_preprocess_logo_site_name().
+ * template_preprocess_logo_site_name_pane().
  *
  * @ingroup themeable
  */
-function template_preprocess_logo_site_name(&$variables) {
+function template_preprocess_logo_site_name_pane(&$variables) {
   // Get a link to the front page.
   $variables['front_page'] = url();
 
