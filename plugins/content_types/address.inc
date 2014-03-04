@@ -4,7 +4,7 @@
 * Plugin definition
 */
 $plugin = array(
-  'title' => t('Opening Hours'),
+  'title' => t('Address'),
   'single' => TRUE,
   'category' => array(t('Restaurant')),
   'edit form' => 'restaurant_plugins_address_content_type_form',

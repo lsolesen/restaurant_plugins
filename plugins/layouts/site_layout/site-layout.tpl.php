@@ -15,17 +15,17 @@
   <header id="header" class="header" role="header">
     <div class="container">
       <div class="row">
-        <div class="col-md-4 col-1">
+        <div class="col-md-4 column-1">
           <div class="panel-panel-inner">
             <?php print $content['header_col1']; ?>
           </div>
         </div>
-        <div class="col-md-4 col-2">
+        <div class="col-md-4 column-2">
           <div class="panel-panel-inner">
             <?php print $content['header_col2']; ?>
           </div>
         </div>
-        <div class="col-md-4 col-3">
+        <div class="col-md-4 column-3">
           <div class="panel-panel-inner">
             <?php print $content['header_col3']; ?>
           </div>
@@ -36,13 +36,7 @@
     
   <div id="main-wrapper">
     <div id="main" class="main">
-      <div class="row">
-        <div class="col-md-12 panel-panel page-content">
-          <div class="panel-panel-inner">
-            <?php print $content['page_content']; ?>
-          </div>
-        </div>
-      </div>
+      <?php print $content['page_content']; ?>
     </div> <!-- /#main -->
   </div> <!-- /#main-wrapper -->
 
