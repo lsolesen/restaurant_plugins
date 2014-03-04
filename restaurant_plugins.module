@@ -21,5 +21,8 @@ function restaurant_plugins_theme() {
       'variables' => array('address' => NULL, 'phone' => NULL),
       'file' => 'restaurant_plugins.theme.inc',
     ),
+    'logo_site_name' => array(
+      'file' => 'restaurant_plugins.theme.inc',
+    ),
   );
 }
