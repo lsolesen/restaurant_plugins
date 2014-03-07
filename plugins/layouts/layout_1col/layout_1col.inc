@@ -7,6 +7,6 @@ $plugin = array(
   'theme' => 'layout_1col',
   'regions' => array(
     'banner' => t('banner'),
-    'contentmain' => t('Content'),
+    'page_content' => t('Content'),
   ),
 );
